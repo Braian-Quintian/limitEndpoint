@@ -1,0 +1,50 @@
+use("db_limit_mongo");
+db.createCollection("usuario", {
+    capped: true,
+    size: 690,
+    max: 5,
+});
+
+use("db_limit_mongo");
+db.usuario.insertMany([
+    {
+        "nombre":  "q",
+        "apellido": "a",
+        "edad": 123
+    },
+    {
+        "nombre":  "q",
+        "apellido": "q",
+        "edad": 123
+    },
+    {
+        "nombre":  "q",
+        "apellido": "q",
+        "edad": 123
+    },
+    {
+        "nombre":  "q",
+        "apellido": "q",
+        "edad": 123
+    },
+    {
+        "nombre":  "q",
+        "apellido": "q",
+        "edad": 123
+    },
+    {
+        "nombre":  "q",
+        "apellido": "q",
+        "edad": 123
+    },
+    {
+        "nombre":  "q",
+        "apellido": "q",
+        "edad": 123
+    },
+    {
+        "nombre":  "q",
+        "apellido": "q",
+        "edad": 123
+    }
+]);
